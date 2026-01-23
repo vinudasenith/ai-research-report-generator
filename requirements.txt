@@ -1,0 +1,6 @@
+crewai
+streamlit
+langchain
+duckduckgo-search
+markdown2
+reportlab
