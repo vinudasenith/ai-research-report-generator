@@ -4,3 +4,5 @@ langchain
 duckduckgo-search
 markdown2
 reportlab
+python-dotenv
+
