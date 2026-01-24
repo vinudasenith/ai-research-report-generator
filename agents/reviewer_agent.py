@@ -1,8 +1,5 @@
 from crewai import Agent
 import os
-import openai
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 reviewer_agent = Agent(
     role="Quality Reviewer",
@@ -12,6 +9,3 @@ reviewer_agent = Agent(
     verbose=True
 )
 
-def review(report):
-    task_description = f"Review and improve the following report:\n{report}"
-    return reviewer_agent.run(task_description)
