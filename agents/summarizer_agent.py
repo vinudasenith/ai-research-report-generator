@@ -1,8 +1,5 @@
 import os
 from crewai import Agent
-import openai
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 summarizer_agent = Agent(
     role="Content Summarizer",
@@ -13,6 +10,3 @@ summarizer_agent = Agent(
 
 )
 
-def summarize(text):
-    task_description = f"Summarize the following research notes:\n{text}"
-    return summarizer_agent.run(task_description)
