@@ -25,6 +25,10 @@ if st.button("Generate Report"):
         # Convert to PDF
         pdf_file = md_to_pdf(report)
 
+        # Read Markdown safely 
+        with open(md_file, "r", encoding="utf-8") as f:
+            md_content = f.read()
+
         # Download buttons
-        st.download_button("Download Markdown", data=open(md_file).read(), file_name="report.md")
+        st.download_button("Download Markdown",data=md_content,file_name="report.md",mime="text/markdown")
         st.download_button("Download PDF", data=open("report.pdf", "rb").read(), file_name="report.pdf", mime="application/pdf")
