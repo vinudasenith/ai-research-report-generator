@@ -1,5 +1,4 @@
 from crewai import Agent
-import os
 
 writer_agent = Agent(
     role="Report Writer",

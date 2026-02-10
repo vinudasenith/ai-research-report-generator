@@ -1,4 +1,3 @@
-import os
 from crewai import Agent
 
 summarizer_agent = Agent(
