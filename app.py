@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import streamlit as st
 from crew import run_crew
 from utils.file_utils import save_md
