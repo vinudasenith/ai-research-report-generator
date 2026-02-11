@@ -34,5 +34,4 @@ def run_crew(topic):
     )
 
     result = crew.kickoff()
-    return result.raw
-
+    return result
